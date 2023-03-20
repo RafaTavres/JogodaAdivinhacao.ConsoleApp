@@ -65,21 +65,21 @@ namespace JogodaAdivinhacao.ConsoleApp
                     if (numeroDigitado > numeroAleatorio)
                     {
                         Console.WriteLine(" O numero aleatorio é menor que isso...");
-                        pontos = (numeroDigitado - numeroAleatorio) / 2;
-                        Console.WriteLine(" Pontos: " + Math.Abs(pontos));
+                        pontos -= Math.Abs((numeroDigitado - numeroAleatorio) / 2);
+                        Console.WriteLine(" Pontos: " + pontos);
                     }
                     else
                     if (numeroDigitado < numeroAleatorio)
                     {
                         Console.WriteLine(" O numero aleatorio é maior que isso...");
-                        pontos = (numeroDigitado - numeroAleatorio) / 2;
-                        Console.WriteLine(" Pontos: " + Math.Abs(pontos));
+                        pontos -= Math.Abs((numeroDigitado - numeroAleatorio) / 2);
+                        Console.WriteLine(" Pontos: " + pontos);
                     }
 
                 }
                 Console.WriteLine("_________________________________________");
                 Console.WriteLine(" O Número era " + numeroAleatorio);
-                Console.WriteLine(" Você Ficou com " + Math.Abs(pontos) + " Ponto(s)");
+                Console.WriteLine(" Você Ficou com " + pontos + " Ponto(s)");
                 Console.WriteLine(" S para Tentar novamente: ");
                 continuar = Console.ReadLine();
                 Console.WriteLine("_________________________________________");
