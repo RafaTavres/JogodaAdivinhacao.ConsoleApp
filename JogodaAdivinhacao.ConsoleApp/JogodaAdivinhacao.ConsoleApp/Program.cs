@@ -44,7 +44,7 @@ namespace JogodaAdivinhacao.ConsoleApp
                 Console.WriteLine("_________________________________________");
                 int pontos = 1000;
                 var ramdom = new Random();
-                int numeroAleatorio = ramdom.Next(1, 20);
+                int numeroAleatorio = ramdom.Next(1, 21);
 
                 for (int i = 0; i < chances; i++)
                 {
